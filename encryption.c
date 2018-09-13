@@ -6,7 +6,7 @@ int main () {
 	int i;
 	
 	printf("Enter a phrase to be encrypted:\n");
-	scanf("%s",phrase);
+	scanf("%[^\n]s",phrase);
 	
 	for (i = 0; ( i<256 && phrase[i]!='\0' ); i++){
 		if (phrase[i] == ' '){
